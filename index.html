@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        :root{
+            --colorlogo :rgba(6,53,52,255);
+            --btnback :#034843;
+            --navbar :#2c5350;
+            --heading :#083333;
+            --paracolor :#224845;
+            --background :rgba(202,241,238,255);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: var(--background);
+        }
+        nav{
+            background-color: var(--background);
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar ul{
+            list-style-type:none;
+        }
+        .navbar ul li{
+            display: inline-block;
+            margin: 30px;
+            font-size: 20px;
+            color: var(--navbar);
+        }
+        div.left{
+            /* border: 2px solid black; */
+
+        }
+        div.right{
+            /* border: 2px solid green; */
+            width: 45vw;
+            display:inline-block;
+            position: absolute; 
+            right:105px;
+            background-image: url(/2.jpg);
+        }
+        div.right img{
+            box-sizing: border-box;
+            /* width: 50vw; */
+            /* height: 100vh; */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 style = " position: absolute; left: 105px; color: var(--colorlogo);"> Zendesk </h1>
+        <div class="navbar" style = "display:flex; justify-content:center; align-items: center;">
+            <ul>
+                <li> Products </li>
+                <li> Pricing </li>
+                <li> Solutions </li>
+                <li> Demo </li>
+                <li> Services </li>
+                <li> Resources </li>
+            </ul>
+            
+        </div>
+        <button style="position:absolute;right:100px;font-size:25px;background-color: var(--btnback);line-height: 50px;width:180px; color: white; border-radius: 5px;"> Get Started </button>
+    </nav>
+
+    <div class="herosection">
+
+        <div class="left" style="display:inline-block;position: absolute; left:105px;">
+         <br><br><br>   
+        <h1 style="font-size: 80px;line-height: 80px; color: var(--heading);">The Best <br> Customer <br>
+        experences  </h1>
+        <br><br>
+        <br><br>
+        <p style="color: var(--paracolor);line-height: 25px;"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptate asperiores architecto <br> Reiciendis doloribus delectus, molestiae nihil perferendis laboriosam debitis fugiat est</p>
+        <br><br><br><br>
+        <h1 style="border: 1px solid var(--btnback);color: white;background-color: var(--btnback); display: inline-block;border-radius: 2px;">Free Trail</h1>
+        <h1 style="border: 1px solid var(--btnback);margin-left: 15px; color: var(--btnback); display: inline-block;border-radius: 2px;">View Demo</h1>
+        </div>
+
+        <div class="right">
+        <br><br><br>
+       <img src = "2.jpg" width ="720px" height="580px"style="position:absolute;right:-5px;">
+        </div>
+
+    </div>
+</body>
+</html>
